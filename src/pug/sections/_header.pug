@@ -1,0 +1,57 @@
+//======== HEADER TOP ======
+header.header
+	.container
+		.header-nav
+			//==== logo mobile====
+			.header-logo HTML Верстальщик
+			
+			//==== menu-icon-mobile====
+			.toggle-menu#menu-toggle
+				span
+			
+			//==== header-menu====
+			.header-menu#header-menu
+				ul
+					li
+						a(href="#skills") Навыки
+					li
+						a(href="#portfolio") Портфолио
+					li
+						a(href="#hw") Как я работаю
+					li
+						a(href="#contacts") Контакты
+
+			.header-social
+				a(href="#!")
+					svg.svg-ln
+						use(href="./img/svgSprite.svg#svg-ln")
+				
+				a(href="#!")
+					svg.svg-git
+						use(href="./img/svgSprite.svg#svg-git")
+
+section.header-content
+	.header-content__wrapper
+		.container
+			.flex-wrapper
+				.header-content__text
+					.header-content__title
+						h1.h1.grad-border Юрий Ключевский
+					
+					.header-content__desk.visible-desk
+						p Верстальщик сайтов, веб-разработчик. Оперативная верстка. Работаю с соблюдением сроков и выполнением ТЗ.
+					
+					.header-content__btn
+						a(href="#!").btn Познакомиться
+						a(href="#!").btn.btn--light Контакты
+				
+				.header-content__photo
+					img(src="./img/header-img.jpg", alt="img")
+				
+					p.visible-mobile Верстальщик сайтов, веб-разработчик. Оперативная верстка. Работаю с соблюдением сроков и выполнением ТЗ.
+	
+	//===== banner =====
+	.header-content__banner
+		img(src="./img/banner.png", alt="banner")
+
+	include _skills.pug
